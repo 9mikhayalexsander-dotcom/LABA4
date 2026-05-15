@@ -50,8 +50,8 @@ os.makedirs('plots', exist_ok=True)
 # Положи файл Bengaluru_House_Data.csv рядом со скриптом
 # или укажи полный путь, например:
 # DATA_PATH = r'C:\Users\9mikh\Downloads\Bengaluru_House_Data.csv'
-
-DATA_PATH = r'C:\Users\9mikh\Downloads\Bengaluru_House_Data.csv'
+import os
+DATA_PATH = os.path.join(os.path.dirname(__file__), 'Bengaluru_House_Data.csv')
 
 df1 = pd.read_csv(DATA_PATH)
 
